@@ -38,14 +38,14 @@ h2 {
     font-size: 1.5em;
 }
 
-main {
+/* main {
     margin-left: 15em;
     margin-right: 15em;
     line-height: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 button {
     margin-bottom: 20px;
@@ -57,6 +57,47 @@ button {
     border-radius: 8px;
 }
 
+.islandCard {
+    /* padding: 10px; */
+    /* border: 3px solid black; */
+    /* height: 350px; */
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mainImage {
+    height: 200px; 
+    width: 200px;
+    margin-bottom: 1px;
+}
+
+.island-main-cards {
+    /* width: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h2 {
+    margin-top: 1px;
+    font-size: 20px;
+    /* text-decoration: a; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-label {
+    margin-left: 325px;
+    font-weight: 700;
+}
+
 .image {
     border-radius: 8px;
     display: block;
@@ -64,6 +105,7 @@ button {
     margin-right: auto;
     width: 50%;
 }
+
 
 nav ul li:hover {
     background-color: royalblue;
