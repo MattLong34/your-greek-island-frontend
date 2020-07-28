@@ -147,8 +147,8 @@ nav ul li:hover {
     border: 2px white;
     margin: 15px;
     width: 300px;
-    text-align: left;
-    height: 375px;
+    text-align: center;
+    height: auto;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -158,17 +158,19 @@ nav ul li:hover {
     width: 275px;
     height: 275px;
     /* margin-top: 10px; */
-    margin: auto;
+    margin: 0px;
     
 }
 .all-islands-names {
-    margin: 0px;
+    margin: 10px;
     padding: 5px;
+    text-align: left;
 
 }
 .all-islands-description {
-    marigin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 5px;
+    text-align: left;
 }
 
 /* ul, ul.visited {
