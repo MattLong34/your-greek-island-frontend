@@ -156,7 +156,6 @@ header a {
     height: auto;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .all-islands-images {
@@ -164,18 +163,41 @@ header a {
     height: 275px;
     /* margin-top: 10px; */
     margin: 0px;
-    
 }
 .all-islands-names {
     margin: 10px;
     padding: 5px;
     text-align: left;
-
 }
+
 .all-islands-description {
     margin: 10px;
     padding: 5px;
     text-align: left;
+}
+
+.ranked-islands-images {
+    width: 50%;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ranked-islands-names {
+    text-align: center;
+    font-size: 50px;
+    margin: 30px;
+}
+
+.ranked-islands-description {
+    /* text-align: center; */
+    margin-top: 30px;
+    /* margin-left: 100px; */
+    width: 50%;
+    margin: auto;
+    line-height: 35px;
+    font-size: 20px;
 }
 
 /* ul, ul.visited {
