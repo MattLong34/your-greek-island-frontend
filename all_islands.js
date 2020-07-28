@@ -1,18 +1,24 @@
-const $mainIslands = document.querySelector(".island-main-cards")
+const main = document.querySelector('main')
 
 fetch("http://localhost:3000/islands")
 .then(response => response.json())
 .then(islands => {
     islands.forEach(island => {
-        const card = document.createElement('article')
+        const islandCard = document.createElement('article')
         const name = document.createElement('h2')
         const image = document.createElement('img')
+        const shortDescription = document.createElement('p')
+        
         name.innerHTML = `<a href='island.html?id=${island.id}'>${island.name}</a>`
         image.src = island.image
-        card.className = 'islandCard'
+        islandCard.className = 'all-island-cards'
+        shortDescription.innerText = island.short_bio
+        image.className = 'all-islands-images'
+        name.className = 'all-islands-names'
+        shortDescription.className = 'all-islands-description'
 
-        card.append(name, image)
-        $mainIslands.append(card)
-        console.log("name", card)
+
+        islandCard.append(name, shortDescription, image)
+        main.append(islandCard)
     })
 })
