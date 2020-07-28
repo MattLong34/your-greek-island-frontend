@@ -10,27 +10,37 @@
   
 </head>
 <body>
-    
     <header>
         <h1><a href="index.html">Your Greek Island</a></h1>
         <nav>
-            <ul class="main-links">
-                <ul class="main-links">
-                    <li><a href="all_islands.html">View All Islands</a></li>
-                </ul>
-            </ul>
+           <ul class="main-links">
+               <li><a href="all_islands.html">View All Islands</a></li>
+           </ul>
         </nav>
-        
     </header>
-    
-    <h2>Find the perfect island for your getaway!</h2>
-    <section>
+    <section class="sub-header">
+        <h2>Find the perfect island for your getaway!</h2>
         <p>There are 62 habitable Greek islands and each offers its own unique benefits.</p> 
         <p>Use the sorting tool to narrow down which island is perfect for your trip!</p>
-    </section>
-
+    </section> 
     <main>
-        <p id="main-label">Popular islands</p>
+
+        <section class="search-filter">
+            <p>Search Filter</p>
+            <ul class="search-filter-form">
+                <form method="GET" action="show_ranked.html">
+                    <select id="category-drop-down" name="category">
+                        <option value="budget_rank">Budget Friendly</option>
+                        <option value="family_rank">Family Friendly</option>
+                        <option value="tourist_rank">Tourist Friendly</option>
+                    </select>
+                    <input type="submit" value="Find Islands">
+                </form>
+
+            </ul>
+        </section> 
+        <p id="main-label">View a popular island:</p>
+
         <section class="island-main-cards">
         </section>
     </main>
@@ -40,9 +50,6 @@
     <footer>
         <!-- <p>Copyright 2020</p> -->
     </footer>
-
-
-    
 </body>
 </html>
 

@@ -94,6 +94,10 @@ a {
     color: black;
 }
 
+header a {
+    color: white;
+}
+
 #main-label {
     margin-left: 100px;
     font-weight: 700;
