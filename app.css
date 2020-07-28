@@ -112,6 +112,44 @@ nav ul li:hover {
     /* padding: 0.5rem; */
 }
 
+/* ALL ISLANDS CARDS CSS */
+
+.main-all-islands-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.all-island-cards {
+    border: 2px white;
+    margin: 15px;
+    width: 300px;
+    text-align: left;
+    height: 375px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.all-islands-images {
+    width: 275px;
+    height: 275px;
+    /* margin-top: 10px; */
+    margin: auto;
+    
+}
+.all-islands-names {
+    margin: 0px;
+    padding: 5px;
+
+}
+.all-islands-description {
+    marigin: 0px;
+    padding: 0px;
+}
+
 /* ul, ul.visited {
     color: #b22222;
     font-size: 20px;
