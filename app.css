@@ -120,7 +120,7 @@ header a {
 }
 
 .image {
-    border-radius: 8px;
+    /* border-radius: 8px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +164,7 @@ header a {
     justify-content: space-evenly;
     flex-direction: row;
     align-content: space-between;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .all-island-cards {
@@ -198,7 +198,7 @@ header a {
 
 .ranked-islands-images {
     width: 50%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -224,6 +224,13 @@ header a {
 
 .ranked-list {
     padding-top: 100px;
+}
+
+.travel-warning {
+    /* padding-top: 100px; */
+    margin-top: 85px;
+    /* margin-bottom: 0; */
+    padding: 0;
 }
 
 /* ul, ul.visited {
@@ -301,4 +308,6 @@ ul.main-links {
 .help li {
     color: white;
 }
+
+
 
