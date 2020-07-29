@@ -9,7 +9,7 @@ fetch(`http://localhost:3000/islands/${id}`)
     .then(response => response.json())
     .then(island => {
         islandName.textContent = island.name
-        islandLongBio.textContent = island.long_bio
+        islandLongBio.innerText = island.long_bio
         // islandImage.innerHTML = `<a href='island.html?id=${island.id}'></a>`
         // islandImage.innerHTML = `<img class='child' src='images/${island.name}.jpg'>`
         islandImage.innerHTML = `<img class="image" src='${island.image}'>`

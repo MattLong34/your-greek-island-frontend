@@ -13,8 +13,7 @@
 
 <body>
     <header>
-        <div>
-            <nav class="navbar navbar-expand-sm navbar-white transparent fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-white fixed-top">
                 <a class="navbar-brand" href="index.html">Your Greek Island</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -32,12 +31,11 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Islands by Category
                             </a>
-                        <div class="dropdown-menu search-filter-form" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Most Popular</a>
-                            <a class="dropdown-item" href="#">Family Friendly</a>
-                            <div class="dropdown-divider"></div>
-                            <a value="budget_rank" class="dropdown-item" href="#">Budget Friendly</a>
-                        </div>
+                            <div class="dropdown-menu search-filter-form" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=tourist_rank">Most Popular</a>
+                                <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=family_rank">Family Friendly</a>
+                                <a value="budget_rank" class="dropdown-item" href="show_ranked.html?category=budget_rank">Budget Friendly</a>
+                            </div>
                         </li>
                     </ul>
                  </div>
@@ -57,34 +55,24 @@
                           <img src="images/oia.jpeg" class="d-block w-100" alt="...">
                               <div class="carousel-caption">  
                                   <h2 class="display-2">Find Your Paradise</h2>  
-                                   <section class="search-filter">
-                                        <p>Search Filter</p>
-                                        <ul class="search-filter-form">
-                                            <form method="GET" action="show_ranked.html">
-                                                <select id="category-drop-down" name="category">
-                                                    <option value="budget_rank">Budget Friendly</option>
-                                                    <option value="family_rank">Family Friendly</option>
-                                                    <option value="tourist_rank">Tourist Friendly</option>
-                                                </select>
-                                                <input type="submit" value="Find Islands">
-                                            </form>
-
-                                        </ul>
-                                    </section> 
                               </div>  
                         </div>
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
                           <img src="images/elafonissos.jpeg" class="d-block w-100" alt="...">
                               <div class="carousel-caption">  
                                   <h2 class="display-2">Find Your Paradise</h2>  
-                                  <p>FORM</p>
+                              </div>  
+                        </div> -->
+                        <div class="carousel-item">
+                          <img src="images/skiathos-beach.jpeg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption">  
+                                  <h2 class="display-2">Find Your Paradise</h2>  
                               </div>  
                         </div>
                         <div class="carousel-item">
-                          <img src="images/homes.jpeg" class="d-block w-100" alt="...">
+                          <img src="images/peloponnese.jpeg" class="d-block w-100" alt="...">
                               <div class="carousel-caption">  
                                   <h2 class="display-2">Find Your Paradise</h2>  
-                                  <p>FORM</p>
                               </div>  
                         </div>
                       </div>
@@ -118,7 +106,15 @@
     </section>  -->
     <main>
 
-        <!-- <section class="search-filter">
+       
+        <p id="main-label">Popular islands</p>
+
+        <section class="island-main-cards" id="popular">
+        </section>
+    </main>
+
+    <!-- <section>
+        <section class="search-filter">
             <p>Search Filter</p>
             <ul class="search-filter-form">
                 <form method="GET" action="show_ranked.html">
@@ -131,14 +127,8 @@
                 </form>
 
             </ul>
-        </section>  -->
-        <p id="main-label">Popular islands</p>
-
-        <section class="island-main-cards" id="popular">
-        </section>
-    </main>
-
-    <section></section>
+        </section> 
+    </section> -->
 
     <footer>
         <!-- <p>Copyright 2020</p> -->

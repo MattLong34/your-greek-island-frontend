@@ -4,20 +4,20 @@ body {
     font-family: 'Montserrat', sans-serif;    
 }
 
-header {
-    /* margin: 0px; */
-    /* text-align: center; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* font-size: 1em; */
-    /* background-color: #0373d9; */
-    /* list-style-type: none; */
-    /* color: white; */
+/* header {
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    background-color: #0373d9;
+    list-style-type: none;
+    color: white;
     width: 1000%;
     overflow-x: hidden;
     position: fixed;
     z-index: 9999;
-}
+} */
 
 ul {
     display: flex;
@@ -131,6 +131,7 @@ header a {
     text-align: center;
     font-size: 50px;
     margin: 30px;
+    margin-top: 150px;
 }
 
 .forecast {
@@ -140,8 +141,9 @@ header a {
 
 .islandLongBio {
     /* text-align: center; */
-    margin-top: 30px;
+    padding-top: 30px;
     /* margin-left: 100px; */
+    padding-bottom: 50px;
     width: 50%;
     margin: auto;
     line-height: 35px;
@@ -162,10 +164,12 @@ header a {
     justify-content: space-evenly;
     flex-direction: row;
     align-content: space-between;
+    margin-top: 150px;
 }
 
 .all-island-cards {
     border: 2px white;
+    text-decoration: none;
     margin: 15px;
     width: 300px;
     text-align: center;
@@ -198,6 +202,8 @@ header a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .ranked-islands-names {
@@ -214,6 +220,10 @@ header a {
     margin: auto;
     line-height: 35px;
     font-size: 20px;
+}
+
+.ranked-list {
+    padding-top: 100px;
 }
 
 /* ul, ul.visited {
@@ -265,13 +275,18 @@ ul.main-links {
 }
 
 .navbar-solid {
-    background-color: blue;
+    background-color: rgba(25, 100, 250, 0.9);
+    /* color: white; */
+}
+
+.navbar-solid li {
+    color: white;
 }
 
 /* CAROUSEL */
 
 .carousel-caption {
-    margin-bottom: 35rem;
+    margin-bottom: 40rem;
 }
 
 .carousel li {
@@ -282,3 +297,8 @@ ul.main-links {
 .dropdown {
     padding-right: 50px;
 }
+
+.help li {
+    color: white;
+}
+
