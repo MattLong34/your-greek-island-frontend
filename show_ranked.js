@@ -4,6 +4,9 @@ const category = searchParams.get("category")
     console.log(category)
 
 const main = document.querySelector('main')
+let num = 0
+const rankedHeader = document.querySelector('.ranked-title')
+
 
 fetch('http://localhost:3000/islands')
     .then(response => response.json())
@@ -14,12 +17,13 @@ fetch('http://localhost:3000/islands')
 
     function setUpIslandCards(array) {
         array.forEach(island => {
+            num ++
             const islandCard = document.createElement('article')
             const name = document.createElement('h2')
             const image = document.createElement('img')
             const mediumDescription = document.createElement('p')
             
-            name.innerHTML = `<a href='island.html?id=${island.id}'> ${island.name}</a>`
+            name.innerHTML = `<a href='island.html?id=${island.id}'>${num}. ${island.name}</a>`
             image.src = island.image
             islandCard.className = 'ranked-islands-cards'
             mediumDescription.innerText = island.medium_bio
@@ -36,13 +40,16 @@ fetch('http://localhost:3000/islands')
         if (category === "family_rank") {
             const $topRank = islands.filter(island => island.family_rank > 0)
             setUpIslandCards($topRank)
+            rankedHeader.innerText = "Top Family-Friendly Islands"
             console.log($topRank)
         } else if (category === "budget_rank") {
             const $topRank = islands.filter(island => island.budget_rank > 0)
             setUpIslandCards($topRank)
+            rankedHeader.innerText = "Top Budget-Friendly Islands"
         } else if (category === "tourist_rank") {
             const $topRank = islands.filter(island => island.tourist_rank > 0)
             setUpIslandCards($topRank)
+            rankedHeader.innerText = "Top Tourist-Friendly Islands"
         }
     }
 
