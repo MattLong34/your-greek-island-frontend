@@ -5,14 +5,18 @@ body {
 }
 
 header {
-    margin: 0px;
+    /* margin: 0px; */
     /* text-align: center; */
-    display: flex;
-    justify-content: space-between;
-    font-size: 1em;
-    background-color: #0373d9;
-    list-style-type: none;
-    color: white;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* font-size: 1em; */
+    /* background-color: #0373d9; */
+    /* list-style-type: none; */
+    /* color: white; */
+    width: 1000%;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 9999;
 }
 
 ul {
@@ -237,3 +241,29 @@ ul.main-links {
     justify-content: space-around;
     margin: 0px;
 } */
+
+/* BOOTSTRAP STYLES */
+
+/* NAVBAR */
+
+/* .transparent {
+    background: transparent;
+} */
+
+/* CAROUSEL */
+
+.carousel-caption {
+    margin-bottom: 500px;
+}
+
+.carousel li {
+    padding: 1px;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+}
+
+.dropdown {
+    padding-right: 50px;
+}
