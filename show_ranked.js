@@ -7,10 +7,6 @@ const main = document.querySelector('main')
 let num = 0
 const rankedHeader = document.querySelector('.ranked-title')
 
-// function updateHeader(category) {
-//     rankedHeader.innerHTML = 
-// }
-
 
 fetch('http://localhost:3000/islands')
     .then(response => response.json())
@@ -21,7 +17,7 @@ fetch('http://localhost:3000/islands')
 
     function setUpIslandCards(array) {
         array.forEach(island => {
-            num = num + 1
+            num ++
             const islandCard = document.createElement('article')
             const name = document.createElement('h2')
             const image = document.createElement('img')
