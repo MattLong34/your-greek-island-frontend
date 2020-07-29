@@ -36,3 +36,14 @@ fetch("http://localhost:3000/islands")
 //             categoryDropDown.append(categoryOption)
 //         })
 //     })
+
+// navbar background color change on scroll
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop()
+    if(scroll < 100){
+        $('.fixed-top').css('background', 'transparent')
+    } else{
+        $('.fixed-top').css('background', 'rgba(25, 100, 250, 0.9)')
+        // $('.fixed-top').css('background', '#0373d9')
+    }
+});

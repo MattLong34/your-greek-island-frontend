@@ -2,29 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Your Greek Island</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <script defer src="app.js"></script>
-  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
-        <h1><a href="index.html">Your Greek Island</a></h1>
-        <nav>
-           <ul class="main-links">
-               <li><a href="all_islands.html">View All Islands</a></li>
-           </ul>
-        </nav>
+            <nav class="navbar navbar-expand-sm navbar-white fixed-top">
+                <a class="navbar-brand" href="index.html">Your Greek Island</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="all_islands.html">All Islands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popular">Popular Islands</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Islands by Category
+                            </a>
+                            <div class="dropdown-menu search-filter-form" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=tourist_rank">Most Popular</a>
+                                <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=family_rank">Family Friendly</a>
+                                <a value="budget_rank" class="dropdown-item" href="show_ranked.html?category=budget_rank">Budget Friendly</a>
+                            </div>
+                        </li>
+                    </ul>
+                 </div>
+            </nav>
+        
     </header>
-    <section class="sub-header">
-        <h2>Find the perfect island for your getaway!</h2>
-        <p>There are 62 habitable Greek islands and each offers its own unique benefits.</p> 
-        <p>Use the sorting tool to narrow down which island is perfect for your trip!</p>
-    </section> 
-    <main>
+    
+              <div class="navbar-home">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/oia.jpeg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption">  
+                                  <h2 class="display-2">Find Your Paradise</h2>  
+                              </div>  
+                        </div>
+                        <!-- <div class="carousel-item">
+                          <img src="images/elafonissos.jpeg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption">  
+                                  <h2 class="display-2">Find Your Paradise</h2>  
+                              </div>  
+                        </div> -->
+                        <div class="carousel-item">
+                          <img src="images/skiathos-beach.jpeg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption">  
+                                  <h2 class="display-2">Find Your Paradise</h2>  
+                              </div>  
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/peloponnese.jpeg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption">  
+                                  <h2 class="display-2">Find Your Paradise</h2>  
+                              </div>  
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+              </div>
+        </div>
 
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>TRAVEL NOTICE:</strong> Please check<a href="https://www.tripadvisor.com/Articles-l297-COVID_2019.html" class="alert-link"> travel restrictions.</a> Due to COVID-19, travel might only be permitted for certain purposes, and touristic travel in particular may not be allowed.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        
+        
+        <!-- <h1><a href="index.html">Your Greek Island</a></h1>
+            <nav>
+                <ul class="main-links">
+                    <li><a href="all_islands.html">View All Islands</a></li>
+                </ul>
+            </nav> -->
+            
+            <!-- <section class="sub-header">
+                <h2>Find the perfect island for your getaway!</h2>
+                <p>There are 62 habitable Greek islands and each offers its own unique benefits.</p> 
+                <p>Use the sorting tool to narrow down which island is perfect for your trip!</p>
+            </section>  -->
+            <main>
+                
+                
+                <p id="main-label">Popular islands</p>
+                
+                <section class="island-main-cards" id="popular">
+                </section>
+    </main>
+
+    <!-- <section>
         <section class="search-filter">
             <ul class="search-filter-form">
                 <form method="GET" action="show_ranked.html">
@@ -39,17 +133,18 @@
 
             </ul>
         </section> 
-        <p id="main-label">View a popular island:</p>
-
-        <section class="island-main-cards">
-        </section>
-    </main>
-
-    <section></section>
+    </section> -->
 
     <footer>
         <!-- <p>Copyright 2020</p> -->
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
