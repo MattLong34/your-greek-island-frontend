@@ -150,6 +150,10 @@ a {
 .forecast {
     text-align: center;
     font-size: 20px;
+    font-weight: 700;
+}
+#tempcolor {
+    color: orange;
 }
 
 .islandLongBio {
