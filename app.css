@@ -130,14 +130,6 @@ label {
     
 }
 
-.submit-button {
-    height: 40px;
-    width: 100px;
-    background-color: #0373d9;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /* ALL ISLANDS CARDS */
 
 .main-all-islands-cards {
@@ -228,19 +220,12 @@ label {
     padding: 0;
 }
 
-ul.main-links {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px;
-} */
-
 /* BOOTSTRAP STYLES */
 
 /* NAVBAR */
 
 .navbar-solid {
-    font-family: 'Indie Flower', cursive;
-    font-size: 30px !important;
+    font-size: 16px !important;
 }
 
 a.navbar-brand {
