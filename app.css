@@ -183,18 +183,18 @@ a {
     
 }
 
-.submit-button {
+/* .submit-button {
     height: 40px;
     width: 100px;
     background-color: #0373d9;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-label {
+} */
+/* label {
     font-weight: 700;
     padding: 10px;
 
-}
+} */
 
 /* nav ul li:hover {
     background-color: royalblue;
@@ -346,9 +346,9 @@ ul.main-links {
 
 .navbar-brand {
     padding-left: 50px;
-    font-family: 'Indie Flower', cursive;
-    font-size: 30px !important;
-    color: white;
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-size: 30px !important; */
+    /* color: white; */
 }
 
 .navbar-solid {
@@ -359,6 +359,11 @@ ul.main-links {
 a.nav-link {
     color: white !important;
 }
+
+/* .nav-image {
+    margin: 0px;
+    padding: 0px;
+} */
 
 /* CAROUSEL */
 
