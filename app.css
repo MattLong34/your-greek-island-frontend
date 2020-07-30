@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-    /* border-top: 20px solid #0373d9; */
     margin: 0;
     font-family: 'Montserrat', sans-serif;    
 }
@@ -10,20 +9,16 @@ main {
     color: black;
 }
 
-/* header {
-    margin: 0px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1em;
-    background-color: #0373d9;
-    list-style-type: none;
+h1 {
+    margin: 10px;
     color: white;
-    width: 1000%;
-    overflow-x: hidden;
-    position: fixed;
-    z-index: 9999;
-} */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1px;
+    font-size: 20px;
+}
 
 ul {
     display: flex;
@@ -38,40 +33,17 @@ li {
     padding: 15px;
 }
 
-h1 {
-    margin: 10px;
-    /* font-size: 2em; */
-    /* margin-bottom: 0px; */
-    color: white;
+a {
+    text-decoration: none !important;
 }
 
-h2 {
-    font-size: 1.5em;
+label {
+    font-weight: 700;
+    padding: 10px;
+
 }
-
-/* main {
-    margin-left: 15em;
-    margin-right: 15em;
-    line-height: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* button {
-    margin-bottom: 20px;
-    background-color: #0373d9;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    font-size: 16px;
-    border-radius: 8px;
-} */
 
 .islandCard {
-    /* padding: 10px; */
-    /* border: 3px solid black; */
-    /* height: 350px; */
     width: 300px;
     text-align: center;
     display: flex;
@@ -95,45 +67,22 @@ h2 {
 }
 
 .island-main-cards {
-    /* width: 10%; */
     display: grid;
     grid-template-columns: auto auto auto;
-    /* -ms-grid-column-align: center; */
     flex-wrap: wrap;
     justify-content: center;
 
 }
 
-h2 {
-    margin-top: 1px;
-    font-size: 20px;
-    /* text-decoration: a; */
-}
-
-a {
-    /* color: black !important; */
-    text-decoration: none !important;
-}
-
-/* header a {
-    color: white !important;
-} */
-
-/* #dropdown-item {
-    color: coral;
-} */
-
 #main-label {
     margin-top: 50px;
-    /* margin-left: 190px; */
-    margin-left: 22.4%;
+    margin-left: 13.2%;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 32px;
 }
 
 .image {
-    /* border-radius: 8px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -144,7 +93,7 @@ a {
     text-align: center;
     font-size: 50px;
     margin: 30px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .forecast {
@@ -153,9 +102,7 @@ a {
 }
 
 .islandLongBio {
-    /* text-align: center; */
     padding-top: 30px;
-    /* margin-left: 100px; */
     padding-bottom: 50px;
     width: 50%;
     margin: auto;
@@ -190,18 +137,8 @@ a {
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-label {
-    font-weight: 700;
-    padding: 10px;
 
-}
-
-/* nav ul li:hover {
-    background-color: royalblue;
-    padding: 0.5rem;
-} */
-
-/* ALL ISLANDS CARDS CSS */
+/* ALL ISLANDS CARDS */
 
 .main-all-islands-cards {
     display: flex;
@@ -234,7 +171,6 @@ label {
 .all-islands-images {
     width: 275px;
     height: 275px;
-    /* margin-top: 10px; */
     margin: 0px;
 }
 .all-islands-names {
@@ -250,9 +186,10 @@ label {
     text-align: left;
 }
 
+/* RANKED ISLANDS PAGE */
+
 .ranked-islands-images {
     width: 50%;
-    /* border-radius: 8px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -267,9 +204,7 @@ label {
 }
 
 .ranked-islands-description {
-    /* text-align: center; */
     margin-top: 30px;
-    /* margin-left: 100px; */
     width: 50%;
     margin: auto;
     line-height: 35px;
@@ -289,42 +224,8 @@ label {
 }
 
 .travel-warning {
-    /* padding-top: 100px; */
     margin-top: 85px;
-    /* margin-bottom: 0; */
     padding: 0;
-}
-
-/* ul, ul.visited {
-    color: #b22222;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* nav {
-    width: 1000px;
-    font-size: 2rem;
-    background-color: black;
-} */
-
-/* nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex: auto;
-    text-align: center;
-}
-
-nav ul li {
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-nav ul li:hover {
-    background-color: lightgrey;
-    padding: 0.5rem;
 }
 
 ul.main-links {
@@ -333,19 +234,20 @@ ul.main-links {
     margin: 0px;
 } */
 
-
-
 /* BOOTSTRAP STYLES */
 
 /* NAVBAR */
 
-/* .navbar {
-    color; white;
-    text-align: center;
-} */
+.navbar-solid {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px !important;
+}
+
+a.navbar-brand {
+    padding-left: 50px;
+}
 
 .navbar-brand {
-    padding-left: 50px;
     font-family: 'Indie Flower', cursive;
     font-size: 30px !important;
     color: white;
@@ -353,7 +255,6 @@ ul.main-links {
 
 .navbar-solid {
     background-color: rgba(25, 100, 250, 0.9);
-    /* color: white; */
 }
 
 a.nav-link {
