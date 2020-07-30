@@ -6,6 +6,10 @@ body {
     font-family: 'Montserrat', sans-serif;    
 }
 
+main {
+    color: black;
+}
+
 /* header {
     margin: 0px;
     text-align: center;
@@ -91,8 +95,10 @@ h2 {
 }
 
 .island-main-cards {
-    /* width: 100px; */
-    display: flex;
+    /* width: 10%; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* -ms-grid-column-align: center; */
     flex-wrap: wrap;
     justify-content: center;
 
@@ -105,17 +111,22 @@ h2 {
 }
 
 a {
-    color: black;
-    text-decoration: none;
+    /* color: black !important; */
+    text-decoration: none !important;
 }
 
-header a {
-    color: white;
-}
+/* header a {
+    color: white !important;
+} */
+
+/* #dropdown-item {
+    color: coral;
+} */
 
 #main-label {
     margin-top: 50px;
-    margin-left: 190px;
+    /* margin-left: 190px; */
+    margin-left: 22.4%;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 32px;
@@ -150,6 +161,7 @@ header a {
     margin: auto;
     line-height: 35px;
     font-size: 20px;
+    text-align: justify;
 }
 
 #category-drop-down {
@@ -199,16 +211,24 @@ label {
     align-content: space-between;
     margin-top: 100px;
 }
+.main-all-islands-cards p {
+    color: black;
+}
 
 .all-island-cards {
     border: 2px white;
     text-decoration: none;
+    color: black;
     margin: 15px;
     width: 300px;
     text-align: center;
     height: auto;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#black-text {
+    color: black;
 }
 
 .all-islands-images {
@@ -221,6 +241,7 @@ label {
     margin: 10px;
     padding: 5px;
     text-align: left;
+    color: black !important;
 }
 
 .all-islands-description {
@@ -253,10 +274,18 @@ label {
     margin: auto;
     line-height: 35px;
     font-size: 20px;
+    text-align: justify;
 }
 
 .ranked-list {
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.ranked-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 65px;
 }
 
 .travel-warning {
@@ -310,10 +339,16 @@ ul.main-links {
 
 /* NAVBAR */
 
+/* .navbar {
+    color; white;
+    text-align: center;
+} */
+
 .navbar-brand {
     padding-left: 50px;
     font-family: 'Indie Flower', cursive;
     font-size: 30px !important;
+    color: white;
 }
 
 .navbar-solid {
@@ -321,8 +356,8 @@ ul.main-links {
     /* color: white; */
 }
 
-.navbar-solid li {
-    color: white;
+a.nav-link {
+    color: white !important;
 }
 
 /* CAROUSEL */

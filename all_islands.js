@@ -1,4 +1,4 @@
-const main = document.querySelector('main')
+const main = document.querySelector('p')
 
 fetch("http://localhost:3000/islands")
 .then(response => response.json())
@@ -9,7 +9,7 @@ fetch("http://localhost:3000/islands")
         const image = document.createElement('img')
         const shortDescription = document.createElement('p')
         
-        name.innerHTML = `<a href='island.html?id=${island.id}'>${island.name}</a>`
+        name.innerHTML = `<a href='island.html?id=${island.id}' id="black-text">${island.name}</a>`
         image.src = island.image
         islandCard.className = 'all-island-cards'
         shortDescription.innerText = island.short_bio

@@ -23,7 +23,7 @@ fetch('http://localhost:3000/islands')
             const image = document.createElement('img')
             const mediumDescription = document.createElement('p')
             
-            name.innerHTML = `<a href='island.html?id=${island.id}'>${num}. ${island.name}</a>`
+            name.innerHTML = `<a href='island.html?id=${island.id}' id="black-text">${num}. ${island.name}</a>`
             image.src = island.image
             islandCard.className = 'ranked-islands-cards'
             mediumDescription.innerText = island.medium_bio
@@ -40,16 +40,16 @@ fetch('http://localhost:3000/islands')
         if (category === "family_rank") {
             const $topRank = islands.filter(island => island.family_rank > 0)
             setUpIslandCards($topRank)
-            rankedHeader.innerText = "Top Family-Friendly Islands"
+            rankedHeader.innerText = "Top Five Family-Friendly Islands"
             console.log($topRank)
         } else if (category === "budget_rank") {
             const $topRank = islands.filter(island => island.budget_rank > 0)
             setUpIslandCards($topRank)
-            rankedHeader.innerText = "Top Budget-Friendly Islands"
+            rankedHeader.innerText = "Top Five Budget-Friendly Islands"
         } else if (category === "tourist_rank") {
             const $topRank = islands.filter(island => island.tourist_rank > 0)
             setUpIslandCards($topRank)
-            rankedHeader.innerText = "Top Tourist-Friendly Islands"
+            rankedHeader.innerText = "Top Five Most Popular Islands"
         }
     }
 

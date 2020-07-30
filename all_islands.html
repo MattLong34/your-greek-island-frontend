@@ -11,42 +11,37 @@
 </head>
 <body> 
     <header>
-        <!-- <h1><a href="index.html">Your Greek Island</a></h1>
-        <nav class="navigation-bar">
-            <ul class="main-links">
-                <li><a href="all_islands.html">View All Islands</a></li>
-            </ul>
-        </nav> -->
+        
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-solid fixed-top">
+            <a class="navbar-brand" href="index.html">Your Greek Island</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="all_islands.html">All Islands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#popular">Popular Islands</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Islands by Category
+                        </a>
+                    <div class="dropdown-menu search-filter-form" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=tourist_rank">Most Popular</a>
+                        <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=family_rank">Family Friendly</a>
+                        <a value="budget_rank" class="dropdown-item" href="show_ranked.html?category=budget_rank">Budget Friendly</a>
+                    </div>
+                    </li>
+                </ul>
+             </div>
+        </nav>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-solid fixed-top">
-        <a class="navbar-brand" href="index.html">Your Greek Island</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="all_islands.html">All Islands</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#popular">Popular Islands</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Islands by Category
-                    </a>
-                <div class="dropdown-menu search-filter-form" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=tourist_rank">Most Popular</a>
-                    <a class="dropdown-item" href="http://localhost:3001/show_ranked.html?category=family_rank">Family Friendly</a>
-                    <a value="budget_rank" class="dropdown-item" href="show_ranked.html?category=budget_rank">Budget Friendly</a>
-                </div>
-                </li>
-            </ul>
-         </div>
-    </nav>
 
     <div class="alert alert-warning alert-dismissible fade show travel-warning" role="alert">
         <strong>TRAVEL NOTICE:</strong> Please check<a href="https://www.tripadvisor.com/Articles-l297-COVID_2019.html" class="alert-link"> travel restrictions.</a> Due to COVID-19, travel might only be permitted for certain purposes, and touristic travel in particular may not be allowed.
@@ -55,7 +50,8 @@
         </button>
       </div>
     
-    <main class="main-all-islands-cards">
+    <main>
+        <p class="main-all-islands-cards"></p>
     </main>
 
     <!-- Optional JavaScript -->
