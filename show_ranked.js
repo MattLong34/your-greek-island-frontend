@@ -40,16 +40,16 @@ fetch('http://localhost:3000/islands')
         if (category === "family_rank") {
             const $topRank = islands.filter(island => island.family_rank > 0)
             setUpIslandCards($topRank)
-            rankedHeader.innerText = "Top Five Family-Friendly Islands"
+            rankedHeader.innerText = "Top Five Family-Friendly Greek Islands"
             console.log($topRank)
         } else if (category === "budget_rank") {
             const $topRank = islands.filter(island => island.budget_rank > 0)
             setUpIslandCards($topRank)
-            rankedHeader.innerText = "Top Five Budget-Friendly Islands"
+            rankedHeader.innerText = "Top Five Budget-Friendly Greek Islands"
         } else if (category === "tourist_rank") {
             const $topRank = islands.filter(island => island.tourist_rank > 0)
             setUpIslandCards($topRank)
-            rankedHeader.innerText = "Top Five Most Popular Islands"
+            rankedHeader.innerText = "Top Five Most Popular Greek Islands"
         }
     }
 

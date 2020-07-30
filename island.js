@@ -31,3 +31,7 @@ function temperatureConverter (temp) {
     let fTemp = temp * 9/5 - 459.67
     return fTemp.toFixed(0)
 }
+    //     islandImage.innerHTML = `<img class="image" src='${island.image}'>`
+        
+    // })
+
