@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
     /* border-top: 20px solid #0373d9; */
     margin: 0;
@@ -310,6 +312,8 @@ ul.main-links {
 
 .navbar-brand {
     padding-left: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px !important;
 }
 
 .navbar-solid {
