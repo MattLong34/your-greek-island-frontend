@@ -17,7 +17,7 @@ Your Greek Island is a full-stack application that allows the user explore the G
 Dive in and find the perfect Greek island for you!
 
 ## Intro Video
-[Your Greek Island on YouTube](URL)
+[Your Greek Island on YouTube](https://youtu.be/VAVgHlKsICs)
 
 ## Technologies
 * Ruby - version 2.6.1
