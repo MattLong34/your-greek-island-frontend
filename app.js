@@ -19,7 +19,6 @@ fetch("http://localhost:3000/islands")
         })
 })
 
-// navbar background color change on scroll
 $(window).scroll(function(){
     var scroll = $(window).scrollTop()
     if(scroll < 100){
