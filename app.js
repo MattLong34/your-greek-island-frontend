@@ -26,6 +26,5 @@ $(window).scroll(function(){
         $('.fixed-top').css('background', 'transparent')
     } else{
         $('.fixed-top').css('background', 'rgba(25, 100, 250, 0.9)')
-        // $('.fixed-top').css('background', '#0373d9')
     }
-});
+})

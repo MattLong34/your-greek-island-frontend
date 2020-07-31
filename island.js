@@ -1,10 +1,13 @@
+// const env = require('./env')
+
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
 
 const islandName = document.querySelector(".islandName")
 const islandLongBio = document.querySelector(".islandLongBio")
 const islandImage = document.querySelector(".islandImage")
-const myApiKey = "74bffa10863bcfe0f5c7501bce2b4a08"
+
+const api_key_1 = config.API_KEY
 
 fetch(`http://localhost:3000/islands/${id}`)
     .then(response => response.json())
@@ -16,7 +19,7 @@ fetch(`http://localhost:3000/islands/${id}`)
         islandName.textContent = island.name
         islandLongBio.innerText = island.long_bio
     
-    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${currentIsland}&appid=74bffa10863bcfe0f5c7501bce2b4a08`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${currentIsland}&appid=${api_key_1}`)
         .then(response => response.json())
         .then(results => {
     
@@ -31,7 +34,4 @@ function temperatureConverter (temp) {
     let fTemp = temp * 9/5 - 459.67
     return fTemp.toFixed(0)
 }
-    //     islandImage.innerHTML = `<img class="image" src='${island.image}'>`
-        
-    // })
 
